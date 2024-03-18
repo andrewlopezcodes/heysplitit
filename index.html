@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="icon" type="image/png" sizes="5x5" href="./images/split-bill.png"> -->
+  <link rel="icon" type="image/png" sizes="32x32 href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="heysplitit.css">
   <title>HeySpitIt</title>
 </head>
@@ -13,16 +13,26 @@
   </h2>
   <div class="card">
     <div class="card-container">
-      <div class="bill-sec">
-        <label for="bill">
-          Bill
-        </label>
-        <div class="bill-input">
-          <input type="text" placeholder="0" id="bill">
-          <img sizes="32x32"src="https://upload.wikimedia.org/wikipedia/commons/1/14/Dollar_Sign.svg" 
-            alt="dollar">
+      <div>
+        <div class="bill-sec">
+          <label for="bill">
+            Bill
+          </label>
+          <div class="bill-input">
+            <input type="text" placeholder="0" id="bill">
+            <img sizes="32x32"src="./images/icon-dollar.svg" 
+              alt="dollar">
+          </div>
+        </div>
+        <div class="people-sec">
+          <label for="people">Number of People</label>
+          <div class="people-input">
+            <input type="text" placeholder="0" id="people">
+            <img src="./images/icon-person.svg" alt="person">
+          </div>
         </div>
       </div>
+     
       <div class="tip-sec">
         <label for="tip">
           Select Tip %
@@ -34,21 +44,16 @@
             <button>15%</button>
           </div>
           <div>
+            <button>20%</button>
             <button>25%</button>
-            <button>10%</button>
+            <button>50%</button>
             <input type="number" placeholder="Custom" id="custom">
           </div>
         </div>
       </div>
-      <div class="people-sec">
-        <label for="people">Number of People</label>
-        <div class="people-input">
-          <input type="text" placeholder="0" id="people">
-          <img src="./images/icon-person.svg" alt="person">
-        </div>
-      </div>
+      
     </div>
-    <div class=""outputs-section>
+    <div class="outputs-section">
       <div class="tip-amount">
         <p>tip Amount <br><span>/ person</span></p>
         <h2 id="tipAmount">$0.00</h2>
@@ -57,7 +62,7 @@
         <p>total <br><span>/ person</span></p>
         <h2 id="total">$0.00</h2>
       </div>
-      <button class="reset-btn" id="restBtn">Reset</button>
+      <button class="reset-btn" id="resetBtn">Reset</button>
     </div>
   </div>
   <script src="heysplitit.js"></script>
